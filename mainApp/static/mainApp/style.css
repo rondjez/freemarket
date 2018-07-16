@@ -1,23 +1,33 @@
 /* change navbar background color-style */
 .navbar{
     border-radius: 0;
-    background-color: chartreuse;
-    border: chartreuse;
+    background-color: hotpink;
+    border: hotpink;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover {
-    background-color: chartreuse;
+    background-color: hotpink;
 }
 
 
 /* change navbar toggle button color-style */
 .navbar-inverse .navbar-toggle {
-    border-color: chartreuse;
+    border-color: hotpink;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: chartreuse;
+    background-color: hotpink;
     border-color: white;
+}
+
+
+/* change navbar font color */
+.navbar-inverse .navbar-nav>li>a {
+    color: pink;
+}
+
+.navbar-inverse .navbar-brand {
+    color: pink;
 }
 
 
@@ -29,7 +39,7 @@
 
 /* modify navbar dropdown menu style */
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
-    background-color: chartreuse;
+    background-color: hotpink;
 }
 
 .dropdown-menu {
@@ -40,13 +50,13 @@
 }
 
 .dropdown-menu>li>a {
-    color: #9d9d9d;
+    color: pink;
     padding: 5px 30px;
 }
 
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
     background-color: white;
-    color: chartreuse;
+    color: hotpink;
 }
 
 
@@ -92,20 +102,20 @@
 
 .btn-success {
     color: white;
-    background-color: chartreuse;
-    border-color: chartreuse;
+    background-color: hotpink;
+    border-color: hotpink;
 }
 
 .btn-success:hover {
     color: white;
-    background-color: chartreuse;
-    border-color: chartreuse;
+    background-color: hotpink;
+    border-color: hotpink;
 }
 
 .btn-success:focus {
     color: white;
-    background-color: chartreuse;
-    border-color: chartreuse;
+    background-color: hotpink;
+    border-color: hotpink;
 }
 
 
@@ -175,7 +185,7 @@
     }
 
     .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
-        background-color: chartreuse;
+        background-color: hotpink;
         color: white;
     }
 
