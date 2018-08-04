@@ -7,7 +7,7 @@
         <div class="alert3">
           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
           <div align="center">
-              <strong>At the moment, there are no items offered from {{ request.GET.q }}.</strong>
+              <strong>At the moment, there are no homeless pets posted from {{ request.GET.q }}.</strong>
           </div>
         </div>
         <div style="height: 700px"></div>
@@ -36,7 +36,7 @@
                                 </a>
                             </div>
                             <div class="caption" style="padding-bottom: 0px;padding-top: 0px">
-                                <h3>{{ item.item_name }}</h3>
+                                <h5><big><strong>{{ item.who_needs_a_home }}</strong></big></h5>
                                 <h5>{{ item.city }}, {{ item.time }}</h5>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
         });
     </script>
 
-    <div style="height: 50px"></div>
+    <div style="height: 150px"></div>
 
     <div class="alert2 alert-bottom" style="margin-bottom: 0px; padding-top: 5px; padding-bottom: 5px">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>

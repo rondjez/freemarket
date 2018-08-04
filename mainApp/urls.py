@@ -33,20 +33,20 @@ urlpatterns = [
     # /post/
     url(r'^post/$', views.add_item, name='add_item'),
 
-    # /my_item/
-    url(r'^my_items/$', views.my_items, name='my_items'),
+    # /my_posts/
+    url(r'^my_posts/$', views.my_items, name='my_items'),
 
-    # /<item_id>/update_item/
-    url(r'^(?P<item_id>[0-9]+)/update_item/$', views.update_item, name='update_item'),
+    # /<item_id>/update_post/
+    url(r'^(?P<item_id>[0-9]+)/update_post/$', views.update_item, name='update_item'),
 
-    # /<item_id>/delete_item/
-    url(r'^(?P<item_id>[0-9]+)/delete_item/$', views.delete_item, name='delete_item'),
+    # /<item_id>/delete_post/
+    url(r'^(?P<item_id>[0-9]+)/delete_post/$', views.delete_item, name='delete_item'),
 
-    # /<item_id>/item_available/
-    url(r'^(?P<item_id>[0-9]+)/item_available/$', views.item_available, name='item_available'),
+    # /<item_id>/homeless_again/
+    url(r'^(?P<item_id>[0-9]+)/homeless_again/$', views.item_available, name='item_available'),
 
-    # /<item_id>/item_unavailable/
-    url(r'^(?P<item_id>[0-9]+)/item_unavailable/$', views.item_unavailable, name='item_unavailable'),
+    # /<item_id>/adopted/
+    url(r'^(?P<item_id>[0-9]+)/adopted/$', views.item_unavailable, name='item_unavailable'),
 
     # /terms/
     url(r'^terms/$', views.terms, name='terms'),

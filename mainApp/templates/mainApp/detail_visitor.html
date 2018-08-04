@@ -3,7 +3,7 @@
 {% block ogimage %}<meta property="og:image" content="{{ item.photo.url }}">{% endblock %}
 
 {% block title %}
-    {{ item.item_name }}
+    {{ item.who_needs_a_home }}
 {% endblock %}
 
 
@@ -30,7 +30,7 @@
                                 <h3>No image to display</h3>
                             {% endif %}
                         </a>
-                        <h2 style="padding-left:10px; padding-right:10px; overflow: hidden">{{ item.item_name }} <small>{{ item.city }}</small></h2>
+                        <h2 style="padding-left:10px; padding-right:10px; overflow: hidden">{{ item.who_needs_a_home }} <small>{{ item.city }}</small></h2>
                         <p style="font-size: 14px; padding-left:10px; padding-right:5px; overflow: hidden; line-height: 20px">{{ item.description }}</p>
                     </div>
                 </div>

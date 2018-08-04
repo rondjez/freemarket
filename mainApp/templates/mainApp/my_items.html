@@ -1,6 +1,6 @@
 {% extends 'mainApp/base.html' %}
 
-{% block title %}My Items{% endblock %}
+{% block title %}My Posts{% endblock %}
 
 {% block my_items_active %}active{% endblock %}
 
@@ -28,15 +28,15 @@
                                 </a>
                             </div>
                             <div class="caption" style="padding-top: 0px">
-                                <h3>{{ item.item_name }}<br><small>{{ item.city }}</small></h3>
+                                <h3>{{ item.who_needs_a_home }}<br><small>{{ item.city }}</small></h3>
 
 {#                                item update button#}
                                 <a href="{% url 'mainApp:update_item' item.id %}" class="btn btn-default btn-sm" role="button">Update</a>
 
                                 {% if item.availability %}
-                                    <a href="{% url 'mainApp:item_unavailable' item.id %}" class="btn btn-default btn-sm" role="button">Mark Unavailable</a>
+                                    <a href="{% url 'mainApp:item_unavailable' item.id %}" class="btn btn-default btn-sm" role="button">Mark Home Found</a>
                                 {% else %}
-                                    <a href="{% url 'mainApp:item_available' item.id %}" class="btn btn-default btn-sm" role="button">Mark Available</a>
+                                    <a href="{% url 'mainApp:item_available' item.id %}" class="btn btn-default btn-sm" role="button">Mark Homeless Again..</a>
                                 {% endif %}
 
 {#                                item delete button#}
@@ -57,19 +57,19 @@
                 <div class="alert3">
                   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                   <div align="center">
-                    <strong>At the moment, you do not have any listed item.</strong>
+                    <strong>At the moment, you do not have any post.</strong>
                   </div>
                 </div>
             {% endif %}
         </div>
     </div>
 
-    <div style="height: 50px"></div>
+    <div style="height: 100px"></div>
 
     <div class="alert2 alert-bottom" style="margin-bottom: 0px; padding-top: 5px; padding-bottom: 5px">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <div align="center">
-            <strong>After giving out your item, please do not forget to remove your post (take your contact info offline) or mark it as unavailable.</strong>
+            <strong>Please judge twice before you let someone adopt the homeless pets or plants.</strong>
         </div>
     </div>
 

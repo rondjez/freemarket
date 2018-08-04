@@ -13,7 +13,7 @@ from django.dispatch.dispatcher import receiver
 
 class Item(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    item_name = models.CharField(max_length=20)
+    who_needs_a_home = models.CharField(max_length=20)
     description = models.TextField(max_length=500, blank=True)
     city = models.CharField(max_length=20)
     contact_info = models.TextField(max_length=200)

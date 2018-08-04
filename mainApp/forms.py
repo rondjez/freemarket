@@ -8,7 +8,7 @@ class ItemForm(forms.ModelForm):
 
     class Meta:
         model = Item
-        fields = ['item_name', 'description', 'city', 'contact_info', 'photo']
+        fields = ['who_needs_a_home', 'description', 'city', 'contact_info', 'photo']
 
 
 # not used

@@ -22,7 +22,7 @@
                 <div class="panel panel-default" style="border-color: transparent; margin-bottom: 0px; box-shadow: none">
                     <div class="panel-body" style="padding: 30px">
                         <div class="container">
-                            <a href="">
+                            <a href="{% url 'social:begin' 'facebook' %}">
                                 <img src="https://www.adopt-a-pet.nl/static/social_icons/fb.png" class="socialimage">
                                 <div class="overlay"></div>
                             </a>
@@ -35,7 +35,7 @@
                 <div class="panel panel-default" style="border-color: transparent; margin-bottom: 0px; box-shadow: none">
                     <div class="panel-body" style="padding: 30px">
                         <div class="container">
-                            <a href="">
+                            <a href="{% url 'social:begin' 'google-oauth2' %}">
                                 <img src="https://www.adopt-a-pet.nl/static/social_icons/google.png" class="socialimage">
                                 <div class="overlay"></div>
                             </a>
@@ -48,7 +48,7 @@
                 <div class="panel panel-default" style="border-color: transparent; margin-bottom: 0px; box-shadow: none">
                     <div class="panel-body" style="padding: 30px">
                         <div class="container">
-                            <a href="">
+                            <a href="{% url 'mainApp:login_user' %}">
                                 <img src="https://www.adopt-a-pet.nl/static/social_icons/fm.png" class="socialimage">
                                 <div class="overlay"></div>
                             </a>
@@ -74,7 +74,7 @@
                 <div class="panel panel-default" style="border-color: transparent; margin-bottom: 0px; box-shadow: none">
                     <div class="panel-body" style="padding: 30px">
                         <div class="container">
-                            <a href="">
+                            <a href="{% url 'social:begin' 'github' %}">
                                 <img src="https://www.adopt-a-pet.nl/static/social_icons/git.png" class="socialimage">
                                 <div class="overlay"></div>
                             </a>
@@ -86,7 +86,7 @@
         </div>
     </div>
 
-    <div style="height: 100px"></div>
+    <div style="height: 150px"></div>
 
 {#    terms and conditions box#}
     <div class="alert2 alert-bottom" style="margin-bottom: 0px; padding-top: 5px; padding-bottom: 5px">

@@ -1,6 +1,6 @@
 {% extends 'mainApp/base.html' %}
 
-{% block title %}Post Your Offer{% endblock %}
+{% block title %}Post a Post{% endblock %}
 
 {% block add_item_active %}active{% endblock %}
 
@@ -10,13 +10,6 @@
         <div class="alert">
           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
           <strong>{{ error_message }}</strong>
-        </div>
-    {% else %}
-        <div class="alert3">
-          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-          <div align="center">
-                  <strong>Please only post free offers.</strong>
-          </div>
         </div>
     {% endif %}
 
@@ -34,7 +27,7 @@
                             {% include 'mainApp/form_template.html' %}
                             <div class="form-group">
                                 <div class="col-sm-offset-5 col-sm-7" style="padding-top: 20px">
-                                    <button type="submit" class="btn btn-success"><strong>Post Your</strong> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></button>
+                                    <button type="submit" class="btn btn-success"><strong>     POST     </strong></button>
                                 </div>
                             </div>
                         </form>
@@ -50,7 +43,7 @@
     <div class="alert2 alert-bottom" style="margin-bottom: 0px; padding-top: 5px; padding-bottom: 5px">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <div align="center">
-            <a href="https://www.youtube.com/embed/VxLffFdt8C8?rel=0&autoplay=1&loop=1&playlist=VxLffFdt8C8" target="_blank"><strong>How to make a Facebook link through which people can text you directly?</strong></a>
+            <strong>How to make a <a href="https://www.youtube.com/embed/7VtISregMEA?rel=0&autoplay=1&loop=1&playlist=7VtISregMEA" target="_blank">Facebook</a> or <a href="https://faq.whatsapp.com/en/android/26000030/" target="_blank">WhatsApp</a> link through which people can text you directly?</strong>
         </div>
     </div>
 

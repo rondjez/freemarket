@@ -5,7 +5,7 @@
 {% load url_target_blank %}
 
 {% block title %}
-    {{ item.item_name }}
+    {{ item.who_needs_a_home }}
 {% endblock %}
 
 
@@ -20,14 +20,14 @@
                 <div class="panel panel-default">
                     <div class="panel-body" style="padding:0px;">
                         {% if not item.availability %}
-                            <h3 style="color: orange; font-weight: bold" align="center">Already Taken</h3>
+                            <h3 style="color: hotpink; font-weight: bold" align="center"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Home Found</h3>
                         {% endif %}
                         <a>
                             {% if item.photo %}
                                 <img src="{{ item.photo.url }}" class="img-responsive center">
                             {% endif %}
                         </a>
-                        <h2 style="padding-left:10px; padding-right:10px; overflow: hidden; margin-bottom:0px">{{ item.item_name }}</h2>
+                        <h2 style="padding-left:10px; padding-right:10px; overflow: hidden; margin-bottom:0px">{{ item.who_needs_a_home }}</h2>
                         <h2 style="padding-left:10px; padding-right:10px; overflow: hidden; margin-top:0px"><small>{{ item.city }}, {{item.time}}</small></h2>
                         <p style="font-size: 14px; padding-left:10px; padding-right:5px; overflow: hidden; line-height: 20px">{{ item.description }}</p>
                         <h5 style="padding-left:10px; overflow: hidden"><strong>Contact: </strong>{{ item.contact_info|urlize|url_target_blank }}</h5>
@@ -42,7 +42,7 @@
     <div class="alert2 alert-bottom" style="margin-bottom: 0px; padding-top: 5px; padding-bottom: 5px">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <div align="center">
-            <strong>Please let us know if you see any buy and sell post, we will remove that, appreciated!</strong>
+            <strong>Please let us know if you see any improper post, we will remove that, appreciated!</strong>
         </div>
     </div>
 
