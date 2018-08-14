@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 {#    set the image displayed when sharing site link on social media#}
-    <meta property="og:image" content="https://www.adopt-a-pet.nl/static/ogimage.png">
+    {% block ogimage %}<meta property="og:image" content="https://www.adopt-a-pet.nl/static/ogimage.png">{% endblock %}
 {#    auto display adjustment based on device screen width#}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {#    set web tab name#}
@@ -373,6 +373,7 @@
             "Ponta Delgada",
 {#            Kroatië#}
             "Dubrovnik",
+            "Karlovac",
             "Pazin","Pula",
             "Rijeka","Rovinj",
             "Zagreb",
