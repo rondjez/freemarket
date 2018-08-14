@@ -1,6 +1,16 @@
 {% extends 'mainApp/base_visitor.html' %}
 
 {% block body %}
+    {% if not items %}
+        <div class="alert3">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          <div align="center">
+              <strong>At the moment, there are no homeless pets posted from {{ request.GET.q }}.</strong>
+          </div>
+        </div>
+        <div style="height: 700px"></div>
+    {% endif %}
+
     <div style="height: 10px"></div>
 
 {#    items#}
