@@ -31,7 +31,7 @@
                             {% endif %}
                         </a>
                         <h2 style="padding-left:10px; padding-right:10px; overflow: hidden">{{ item.who_needs_a_home }} <small>{{ item.city }}</small></h2>
-                        <p style="font-size: 14px; padding-left:10px; padding-right:5px; overflow: hidden; line-height: 20px">{{ item.description }}</p>
+                        <pre style="font: -webkit-control; font-size: 14px; padding-left:10px; padding-right:5px; line-height: 20px">{{ item.description|urlize|url_target_blank }}</pre>
                     </div>
                 </div>
             </div>
